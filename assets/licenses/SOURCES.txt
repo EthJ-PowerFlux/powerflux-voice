@@ -1,0 +1,90 @@
+License sources for PowerFlux Voice 0.3.0
+
+Handy source: https://github.com/cjpais/Handy/tree/14f6f0d31cb22a4268acfbddba3052820fd0a06e
+Dependency versions and crate SHA-256 values were checked against src-tauri/Cargo.lock at v0.9.8.
+The original arm64 binary also contains version paths for transcribe-cpp 0.2.4, transcribe-rs 0.3.8, Tauri 2.11.5 and ort 2.0.0-rc.12.
+
+earshot-1.2.2
+https://static.crates.io/crates/earshot/earshot-1.2.2.crate
+SHA-256: afea66474c4036a7e5fa4b072a3b0a09cd0b01f00134da3115d76b7cc5899f03
+Source commit: c400f15bd232dda30a297eec90235bd09066cab7
+
+ferrous-opencc-0.2.3
+https://static.crates.io/crates/ferrous-opencc/ferrous-opencc-0.2.3.crate
+SHA-256: e7604efd2d4d8ee72dcbf7b24b604d7a4c764dfab40152bbe12ae241f784560b
+Source commit: 5daa80ca2b70d72254993734351ca74e53370e64
+
+ort-2.0.0-rc.12
+https://static.crates.io/crates/ort/ort-2.0.0-rc.12.crate
+SHA-256: d7de3af33d24a745ffb8fab904b13478438d1cd52868e6f17735ef6e1f8bf133
+
+ort-sys-2.0.0-rc.12
+https://static.crates.io/crates/ort-sys/ort-sys-2.0.0-rc.12.crate
+SHA-256: d7b497d21a8b6fbb4b5a544f8fadb77e801a09ae0add9e411d31c6f89e3c1e90
+
+tauri-2.11.5
+https://static.crates.io/crates/tauri/tauri-2.11.5.crate
+SHA-256: 667b20e2726d572dea2de7370da16e188eb06008faf9a92fab7cdc46791190b5
+
+transcribe-cpp-0.2.4
+https://static.crates.io/crates/transcribe-cpp/transcribe-cpp-0.2.4.crate
+SHA-256: 8afa3f82415ece32f944e0d5ad347716c7e86d41ee8727ad8143afb080a6a60c
+
+transcribe-cpp-sys-0.2.4
+https://static.crates.io/crates/transcribe-cpp-sys/transcribe-cpp-sys-0.2.4.crate
+SHA-256: 1c6946c7bf90046fc51e5bc25373a4f6270ca10fdcf4f35b1174075e43c535b5
+
+transcribe-rs-0.3.8
+https://static.crates.io/crates/transcribe-rs/transcribe-rs-0.3.8.crate
+SHA-256: b231bc9bd1b20be89583a49c3885dfa7d7323299564ee78eddf83db04f2b337b
+
+wry-0.55.1
+https://static.crates.io/crates/wry/wry-0.55.1.crate
+SHA-256: 186f9871daa55fd9c016578b810d149de58367113db7fb72b462d2323ce19514
+
+Transcribe native code / ggml / miniz: extracted from the verified transcribe-cpp-sys crate.
+Tauri and Wry: original MIT, Apache and attribution texts extracted from their verified crates.
+ort and ort-sys have identical license texts; one copy of each is included.
+
+Tao:
+https://github.com/cjpais/tao/tree/c3bee28c1d446d95f08c95c3b6f8d4bde052b876
+Files: LICENSE, LICENSE.spdx
+
+Earshot:
+https://github.com/pykeio/earshot/tree/c400f15bd232dda30a297eec90235bd09066cab7
+Files: LICENSE-APACHE, LICENSE-MIT
+Its src/fft/mod.rs attributes the FFT implementation to Jan Teske (2020-2024), under MIT.
+
+ferrous-opencc 0.2.3:
+Its verified Cargo.toml.orig declares Apache-2.0 and names apoint123 as author.
+The package does not contain a standalone license file. Apache 2.0 text is included as OpenCC-Apache-2.0-LICENSE.txt.
+OpenCC license source: https://github.com/BYVoid/OpenCC/blob/master/LICENSE
+License Git blob: 9f7a310eb2b143dfc4b73551ea60ca17eb2b981f
+
+ONNX Runtime 1.24.2:
+https://github.com/microsoft/onnxruntime/tree/v1.24.2
+LICENSE Git blob: 48bc6bb4996ac924359e8e28b9ae88970e5ed3fc
+ThirdPartyNotices.txt Git blob: fbd9f9a95f6013d8ecaef81e02b0033e5882a675
+Version evidence: ort-sys 2.0.0-rc.12 build/download/dist.txt and Handy v0.9.8 .github/workflows/build.yml.
+The upstream notices cover multiple ONNX Runtime build options; they are retained in full.
+
+Handy: https://github.com/cjpais/Handy/blob/v0.9.8/LICENSE
+Whisper: https://github.com/openai/whisper/blob/main/LICENSE (Git blob d25552598bb9c5400612159ed4bab92ce12a5ce5)
+whisper.cpp: https://github.com/ggml-org/whisper.cpp/blob/master/LICENSE (Git blob e7dca554bcb802f98408383a864404e3aa4eacca)
+
+Qwen3-ASR 0.6B Q8_0 model (bundled model for PowerFlux Voice 0.3.0):
+Original model authors: Qwen team / Alibaba Cloud. GGUF publisher: handy-computer.
+Original model revision: 5eb144179a02acc5e5ba31e748d22b0cf3e303b0
+https://huggingface.co/Qwen/Qwen3-ASR-0.6B/tree/5eb144179a02acc5e5ba31e748d22b0cf3e303b0
+GGUF model revision: e4e16599b900eb0cb36e524514756bb92eb092b7
+https://huggingface.co/handy-computer/Qwen3-ASR-0.6B-gguf/resolve/e4e16599b900eb0cb36e524514756bb92eb092b7/Qwen3-ASR-0.6B-Q8_0.gguf
+Model SHA-256: f081b2d5e23bd669d92cc331d722a8a0681943b8e6f34b48996fd5c319b5acd8
+Model size: 850423456 bytes
+Both pinned original and GGUF model cards declare Apache-2.0.
+The GGUF publisher converted and quantized the weights; PowerFlux does not modify this model file.
+License source: https://github.com/QwenLM/Qwen3-ASR/blob/main/LICENSE
+License Git blob: c347eb5ec781d2702623e8e2b5923fa1a766a64d
+License SHA-256: a44a6081c73ad75f0255bb2bb5cab74ef1829565a895a24e53a4f11290ab7655
+Included as: Qwen3-ASR-Apache-2.0-LICENSE.txt
+Retrieved: 2026-10-24 Australia/Sydney
+The Whisper and whisper.cpp license files above are retained for built-in engine code; Whisper Small weights are no longer the packaged model.
