@@ -1,5 +1,7 @@
 # PowerFlux Voice
 
+简体中文 | [English](README.en.md)
+
 [下载公开测试版](https://github.com/EthJ-PowerFlux/powerflux-voice/releases/tag/v0.3.0)
 
 按住 Option 说话，松开后把文字填入当前输入框。可以添加常用的人名、公司名和产品名。应用在本机识别语音，不自动发送文字。
